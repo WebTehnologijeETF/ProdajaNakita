@@ -1,0 +1,309 @@
+@import url('http://fonts.googleapis.com/css?family=Stalemate&subset=latin,latin-ext');
+@import url('<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Dancing+Script|Handlee&subset=latin,latin-ext');
+* {
+padding:1px;
+margin:2px;
+text-decoration:none;
+}
+
+body 
+{
+
+width:1240px;
+height:750px;
+background:url('http://wallfoy.com/wp-content/uploads/2014/03/Grey-Background-67.jpg')no-repeat center center fixed;
+-moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: cover;        
+}
+
+body > #okvir
+{
+	
+      width:1230px;
+        height:740px;
+ margin-left: 40px;
+
+
+
+}
+
+#okvir > #zaglavlje
+{
+padding:1px;
+font-size: 46px;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+
+
+
+
+div.logo{
+ max-width:100px;
+    height:120px;
+    text-align:justify;
+   opacity:0.8;
+   background:url('http://i59.tinypic.com/2dlumxe_th.png')no-repeat ;
+background-size:90%;;
+margin-top:-10px;}
+
+.logo {
+  -webkit-transition: all 0.5s ease;
+     -moz-transition: all 0.5s ease;
+       -o-transition: all 0.5s ease;
+      -ms-transition: all 0.5s ease;
+          transition: all 0.5s ease;
+}
+ 
+.logo:hover {
+  border-radius: 50%;
+  -webkit-transform: rotate(360deg);
+     -moz-transform: rotate(360deg);
+       -o-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+h1 
+{
+width:500px;
+height:59px;
+
+ text-align: center;
+font-size: 56px;
+font-family: 'Stalemate', cursive;
+color:#2F4F4F;
+padding: 5px;
+
+}
+
+
+
+div > #meni
+{
+
+	
+ text-decoration: none;
+      border: 2px solid lightgrey;
+
+  
+   border-radius: 25px;
+
+}
+
+
+
+#meni > ul li
+{
+	display: inline-table;
+	padding: 5px 0px;
+}
+
+#meni>a:link {
+
+    color: #E0E0E0 ;
+
+}
+
+
+a:visited {
+    color: #000000;
+}
+
+
+a:hover {
+    color: #C0C0C0
+;
+}
+
+a:active {
+    color: #C0C0C0
+;
+}
+
+
+
+div > #glavni
+{
+        width:1240px;
+         height:700px;
+	float:left;
+
+}
+
+div > #glavni2
+{
+        width:1240px;
+         height:700px;
+	float:left;
+
+}
+
+
+
+div.image {
+
+ max-width:796px;
+height:400px;
+    text-align:justify;
+   opacity:0.8;
+   background:url('http://i.imgur.com/J8Fj8SZ.jpg')no-repeat ;
+ 
+background-size:90%;
+}
+
+
+div.imagekontakt{
+
+ max-width:1215px;
+height:680px;
+    text-align:justify;
+   opacity:0.3;
+   background:url('http://shs5aj.assets-02.cdndrive.com/wp-content/uploads/2012/08/Parker-Sonnet-Metal-Pearl.jpg')no-repeat ;
+ 
+background-size:100%;
+
+
+
+
+}
+div.image1 {
+
+ max-width:500px;
+height:400px;
+    text-align:justify;
+   opacity:0.8;
+   background:url('http://www.neckersjewelers.com/media/slides/hearts_on_fire_2.jpg')no-repeat ;
+ 
+background-size:88%;
+margin-top:250px;
+}
+  
+div > #dno
+{
+background-color: #E0E0E0 ;
+	padding: 10px 10px;
+  
+}
+
+div.image2 {
+
+ max-width:500px;
+    height:400px;
+    text-align:justify;
+   opacity:0.8;
+   background:url('http://www.bridalguide.com/sites/default/files/article-images/planning/DT_eternal.jpg')no-repeat ;
+background-size:55%;
+margin-left:448px;
+margin-top:-405px;
+}
+
+div.logo{
+
+ max-width:160px;
+    height:150px;
+    text-align:justify;
+   opacity:0.8;
+   background:url('http://i59.tinypic.com/2dlumxe_th.png')no-repeat ;
+background-size:90%;
+;
+margin-top:-90px;
+
+}
+
+
+
+
+
+table.gridtable {
+	 font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#000000;
+	border-width:10px;
+	border-color:#666666;
+ border-radius: 100px;
+	
+}
+table.gridtable th {
+	border-width: 15px;
+	padding: 15px;
+	border-style: solid;
+	border-color:#666666;
+   border-radius: 25px;
+	background-color: #666666;
+
+}
+table.gridtable td {
+
+	border-width: 1px;
+
+	padding: 5px;
+border-style: solid;
+	border-color:#2F4F4F ;
+   border-radius: 25px;
+color:blue;
+	
+}
+
+
+table.tabelanovosti {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#000000;
+	border-width:10px;
+	border-color:#666666;
+        border-radius: 10px;
+	border-collapse: collapse;
+        border:1px solid black;
+        padding: 5px;
+
+       margin-top: -404px;
+       margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 725px;
+
+
+}
+
+
+table.tabelanovosti th {
+
+  font-family: 'Handlee', cursive;
+	color:#2F4F4F;
+font-size:20px;
+	border-width:2px;
+	border-style: inset;;
+	border-color:#696969;
+   border-radius: 25px;
+padding: 5px;
+
+
+}
+
+table.tabelanovosti td{
+border-width: 5px;
+text-align:left;
+border-radius: 25px;
+color:#111111;
+padding: 5px;
+border: #A696969;
+border-style: outset;
+ 
+	
+}
+
+#dno > ul
+{
+margin-bottom: 50px;}
+
+
+div > #podnozje
+{
+background-color: #E0E0E0 ;
+	width: 1200px;
+padding:0px 5px 0px 15px;
+
+}
+
+
