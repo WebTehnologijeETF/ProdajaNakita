@@ -17,16 +17,16 @@ background:url('http://wallfoy.com/wp-content/uploads/2014/03/Grey-Background-67
     background-size: cover;        
 }
 
+
+
 body > #okvir
 {
 	
       width:1230px;
         height:740px;
  margin-left: 40px;
-
-
-
 }
+
 
 #okvir > #zaglavlje
 {
@@ -35,18 +35,13 @@ font-size: 46px;
   text-shadow: 4px 4px 4px #aaa;
 }
 
+#okvir > #zaglavlje2
+{
+padding:1px;
+font-size: 46px;
+  text-shadow: 4px 4px 4px #aaa;
+}
 
-
-
-
-div.logo{
- max-width:100px;
-    height:120px;
-    text-align:justify;
-   opacity:0.8;
-   background:url('http://i59.tinypic.com/2dlumxe_th.png')no-repeat ;
-background-size:90%;;
-margin-top:-10px;}
 
 .logo {
   -webkit-transition: all 0.5s ease;
@@ -69,8 +64,7 @@ h1
 {
 width:500px;
 height:59px;
-
- text-align: center;
+text-align: center;
 font-size: 56px;
 font-family: 'Stalemate', cursive;
 color:#2F4F4F;
@@ -78,6 +72,33 @@ padding: 5px;
 
 }
 
+
+h3
+{
+width:500px;
+height:59px;
+
+ text-align: center;
+
+font-family: 'Stalemate', cursive;
+color:#2F4F4F;
+padding: 5px;
+
+}
+
+form { 
+    min-width: 200px;
+    width: 75%;
+    max-width: 500px;
+    margin-left:10px;
+margin-top:0px;
+
+
+}
+form textarea, 
+form input { 
+    width: 70%;
+}
 
 
 div > #meni
@@ -93,34 +114,16 @@ div > #meni
 }
 
 
-
 #meni > ul li
 {
 	display: inline-table;
 	padding: 5px 0px;
 }
 
-#meni>a:link {
-
-    color: #E0E0E0 ;
-
-}
-
-
-a:visited {
-    color: #000000;
-}
-
-
-a:hover {
-    color: #C0C0C0
-;
-}
-
-a:active {
-    color: #C0C0C0
-;
-}
+#meni>a:link {color: #E0E0E0 ;}
+a:visited {color: #000000;}
+a:hover {color: #C0C0C0;}
+a:active {color: #C0C0C0;}
 
 
 
@@ -131,43 +134,28 @@ div > #glavni
 	float:left;
 
 }
-
 div > #glavni2
 {
-        width:1240px;
-         height:700px;
+        width:1220px;
+         height:500px;
 	float:left;
+
 
 }
 
 
-
-div.image {
 
  max-width:796px;
 height:400px;
     text-align:justify;
    opacity:0.8;
-   background:url('http://i.imgur.com/J8Fj8SZ.jpg')no-repeat ;
+    background:url('http://i.imgur.com/J8Fj8SZ.jpg')no-repeat ;
  
-background-size:90%;
+background-size:90%
 }
 
 
-div.imagekontakt{
 
- max-width:1215px;
-height:680px;
-    text-align:justify;
-   opacity:0.3;
-   background:url('http://shs5aj.assets-02.cdndrive.com/wp-content/uploads/2012/08/Parker-Sonnet-Metal-Pearl.jpg')no-repeat ;
- 
-background-size:100%;
-
-
-
-
-}
 div.image1 {
 
  max-width:500px;
@@ -199,6 +187,7 @@ margin-left:448px;
 margin-top:-405px;
 }
 
+
 div.logo{
 
  max-width:160px;
@@ -207,7 +196,6 @@ div.logo{
    opacity:0.8;
    background:url('http://i59.tinypic.com/2dlumxe_th.png')no-repeat ;
 background-size:90%;
-;
 margin-top:-90px;
 
 }
@@ -301,9 +289,20 @@ margin-bottom: 50px;}
 div > #podnozje
 {
 background-color: #E0E0E0 ;
-	width: 1200px;
+width: 1200px;
 padding:0px 5px 0px 15px;
 
 }
+
+div > #podnozje2
+{
+background-color: #E0E0E0 ;
+width: 1240px;
+padding:0px 0px 0px 0px;
+margin-top:350px;
+
+}
+
+
 
 
