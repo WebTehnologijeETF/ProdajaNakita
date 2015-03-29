@@ -130,7 +130,7 @@ a:active {color: #C0C0C0;}
 div > #glavni
 {
         width:1240px;
-         height:700px;
+         height:650px;
 	float:left;
 
 }
@@ -154,6 +154,16 @@ height:400px;
 background-size:90%
 }
 
+div.imageonama{
+max-width:1204px;
+height:400px;
+    text-align:justify;
+   opacity:0.8;
+    background:url('http://data2.whicdn.com/images/22845994/large.jpg')no-repeat ;
+ 
+background-size:50%
+
+}
 
 
 div.image1 {
