@@ -19,6 +19,25 @@ background:url('http://wallfoy.com/wp-content/uploads/2014/03/Grey-Background-67
 
 
 
+
+#link_nazad
+{
+	background: url("../img/listArrow.gif") no-repeat;
+	width:80px;
+	border:1px solid black;
+	top:5px;
+	padding: 1px 0px 2px 0px;
+}
+
+#link_nazad > a
+{
+	margin-left: 15px;
+margin top:25px;
+	text-decoration: none;
+	font-size:15px;
+color: black;
+}
+
 body > #okvir
 {
 	
@@ -86,12 +105,26 @@ padding: 5px;
 
 }
 
+h2{
+width:420px;
+height:39px;
+text-align: left;
+font-size:25px;
+font-family: 'Handlee';
+color:#2F4F4F;
+padding: 5px;
+border:1px solid black;
+
+}
+
 form { 
-    min-width: 200px;
+    min-width: 150px;
     width: 75%;
-    max-width: 500px;
+    max-width: 300px;
     margin-left:10px;
 margin-top:0px;
+border: 2px solid #a1a1a1;
+    border-radius: 25px;
 
 
 }
@@ -103,15 +136,19 @@ form input {
 
 div > #meni
 {
-
-	
- text-decoration: none;
-      border: 2px solid lightgrey;
+        width:1220px;
+       
+	float:left;
+text-decoration: none;
+      border: 2px solid #2F4F4F;;
 
   
    border-radius: 25px;
 
 }
+
+
+
 
 
 #meni > ul li
@@ -120,28 +157,99 @@ div > #meni
 	padding: 5px 0px;
 }
 
-#meni>a:link {color: #E0E0E0 ;}
+#meni >a:link {color: #2F4F4F;}
 a:visited {color: #000000;}
-a:hover {color: #C0C0C0;}
-a:active {color: #C0C0C0;}
+a:hover {color: #2F4F4F;}
+a:active {color: #2F4F4F;}
 
 
 
 div > #glavni
-{
-        width:1240px;
-         height:650px;
+{background-color: #E0E0E0 ;
+        width:1220px;
+         height:450px;
 	float:left;
 
 }
 div > #glavni2
-{
+{background-color: #E0E0E0 ;
         width:1220px;
-         height:500px;
+         height:650px;
 	float:left;
+}
+
+
+.ScrollStyle
+{
+    max-height: 420px;
+   max-width: 450px;
+    overflow-y: scroll;
+margin-left:740px;
+margin-top:-398px;
+border:2px inset #2F4F4F;
+}
+
+.ScrollStyle2
+{
+  overflow-y:scroll;
+    width: 1100px;
+    height:200px;
+
+ 
+margin-top:30px;
 
 
 }
+
+p.pos_fixed {
+    position: fixed;
+    top: 30px;
+    right: 5px;
+    color: black;
+}
+
+
+.ScrollStyle3
+{
+  overflow-y:scroll;
+    width: 1100px;
+    height: 200px;
+
+  
+    
+margin-top:30px;
+
+
+}
+
+div.img {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}	
+
+div.img img {
+    display: inline;
+    margin: 5px;
+ 1px solid #2F4F4F;
+}
+
+div.img a:hover img {
+    border: 1px solid #2F4F4F;
+}
+
+div.desc {
+  text-align: center;
+  font-weight: normal;
+  width: 120px;
+  margin: 5px;
+}
+
+
 
 div.image{
 
@@ -155,13 +263,13 @@ background-size:90%
 }
 
 div.imageonama{
-max-width:1204px;
-height:400px;
+max-width:600px;
+height:600px;
     text-align:justify;
    opacity:0.8;
     background:url('http://data2.whicdn.com/images/22845994/large.jpg')no-repeat ;
  
-background-size:50%
+background-size:80%
 
 }
 
@@ -211,7 +319,21 @@ margin-top:-90px;
 }
 
 
+div.Onamapodaci{
+ width:550px;
+         height:300px;
+	float:right;
+margin-right:120px;
+border: 2px solid #a1a1a1;
+    border-radius: 25px;
+}
 
+div.Kontaktpodaci{
+width:600px;
+         height:500px;
+	float:right;
+margin-right:110px;
+}
 
 
 table.gridtable {
@@ -219,7 +341,7 @@ table.gridtable {
 	font-size:15px;
 	color:#000000;
 	border-width:10px;
-	border-color:#666666;
+	border-color:#2F4F4F;
  border-radius: 100px;
 	
 }
@@ -227,7 +349,7 @@ table.gridtable th {
 	border-width: 15px;
 	padding: 15px;
 	border-style: solid;
-	border-color:#666666;
+	border-color:#2F4F4F;;
    border-radius: 25px;
 	background-color: #666666;
 
@@ -245,61 +367,29 @@ color:blue;
 }
 
 
-table.tabelanovosti {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size:15px;
-	color:#000000;
-	border-width:10px;
-	border-color:#666666;
-        border-radius: 10px;
-	border-collapse: collapse;
-        border:1px solid black;
-        padding: 5px;
-
-       margin-top: -404px;
-       margin-bottom: 0px;
-    margin-right: 0px;
-    margin-left: 725px;
 
 
-}
-
-
-table.tabelanovosti th {
-
-  font-family: 'Handlee', cursive;
-	color:#2F4F4F;
-font-size:20px;
-	border-width:2px;
-	border-style: inset;;
-	border-color:#696969;
-   border-radius: 25px;
-padding: 5px;
-
-
-}
-
-table.tabelanovosti td{
-border-width: 5px;
-text-align:left;
-border-radius: 25px;
-color:#111111;
-padding: 5px;
-border: #A696969;
-border-style: outset;
- 
-	
-}
 
 #dno > ul
 {
-margin-bottom: 50px;}
+margin-bottom: 50px;
+
+    list-style-image: url('http://www.fordesigner.com/pic/zip/2009161245116877780111.gif');
 
 
+}
+
+ul.mojilinkovi{
+list-style-image: url('http://www.fordesigner.com/pic/zip/2009161245116877780111.gif');
+
+
+}
 div > #podnozje
 {
 background-color: #E0E0E0 ;
 width: 1200px;
+height:40px;
+margin-top:550px;
 padding:0px 5px 0px 15px;
 
 }
@@ -309,10 +399,47 @@ div > #podnozje2
 background-color: #E0E0E0 ;
 width: 1240px;
 padding:0px 0px 0px 0px;
-margin-top:350px;
+margin-top:450px;
 
 }
 
 
+p{
+color:black;
+padding:1px;}
 
+
+table.tabeleposlovnica {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:15px;
+	color:#000000;
+	border-width:10px;
+	border-color:#666666;
+ 
+width:400px;
+         height:200px;
+	float:right;
+margin-right:-10px;
+	
+}
+table.tabeleposlovnica th {
+	border-width: 15px;
+	padding: 15px;
+	border-style: solid;
+	border-color:#666666;
+   
+	background-color: #666666;
+
+}
+table.tabeleposlovnica td {
+
+	border-width: 1px;
+
+	padding: 5px;
+border-style: solid;
+	border-color:#2F4F4F ;
+  
+color:black;
+	
+}
 
