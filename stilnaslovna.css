@@ -170,14 +170,15 @@ a:active {color: #2F4F4F;}
 
 
 div > #glavni
-{background-color: #E0E0E0 ;
+{
+background-color: #E0E0E0 ;
         width:1220px;
          height:450px;
 	float:left;
 
 }
 div > #glavni2
-{background-color: #E0E0E0 ;
+{background-color:transparent ;
         width:1220px;
          height:550px;
 	float:left;
@@ -208,7 +209,7 @@ margin-top:30px;
 
 
 #sidebar {
- 
+ background-color: #E0E0E0 ;
     top:30px; bottom:0; left:0;
     width:200px;
 height:540px;
@@ -278,7 +279,7 @@ div.image{
 height:400px;
     text-align:justify;
    opacity:0.8;
-    background:url('http://i.imgur.com/J8Fj8SZ.jpg')no-repeat ;
+    background:url('http://healthyandbeloved.com/wp-content/uploads/2012/07/tumblr_lvfqtbrOZ31qjk1ago1_500_large.png')no-repeat ;
  
 background-size:90%
 }
@@ -420,13 +421,13 @@ div > #podnozje2
 background-color: #E0E0E0 ;
 width: 1240px;
 height:23px;
-margin-top:610px;
+margin-top:550px;
 padding:0px 5px 0px 15px;
 
 }
 
 
-p{
+#p{
 color:black;
 padding:1px;}
 
