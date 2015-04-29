@@ -1,5 +1,7 @@
 @import url('http://fonts.googleapis.com/css?family=Stalemate&subset=latin,latin-ext');
-@import url('<link href='http://fonts.googleapis.com/css?family=Indie+Flower|Dancing+Script|Handlee&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Indie+Flower|Dancing+Script|Handlee&subset=latin,latin-ext');
+@import url('http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css');
+
 * {
 padding:1px;
 margin:2px;
@@ -14,7 +16,8 @@ height:750px;
 background:url('http://wallfoy.com/wp-content/uploads/2014/03/Grey-Background-67.jpg')no-repeat center center fixed;
 -moz-background-size: cover;    /* Mozilla*/
     -o-background-size: cover;      /* Opera*/
-    background-size: cover;        
+    background-size: cover;      
+overflow-x:hidden;	
 }
 
 
@@ -123,11 +126,13 @@ form {
  
    width: 75%;
  
-   max-width: 300px;
+   max-width: 400px;
   
+max-height:350;
+min-height:300;
   margin-left:10px;
 
-margin-top:0px;
+margin-top:2px;
 
 border: 2px solid #a1a1a1;
     
@@ -137,7 +142,7 @@ border-radius: 25px;
 }
 
 form input { 
-    width: 70%;
+    width: 80%;
 }
 
 
@@ -162,7 +167,8 @@ text-decoration: none;
 	padding: 5px 0px;
 }
 
-#meni >a:link {color: #2F4F4F;}
+#meni >
+a:link {color: #2F4F4F;}
 a:visited {color: #000000;}
 a:hover {color: #2F4F4F;}
 a:active {color: #2F4F4F;}
@@ -494,3 +500,63 @@ padding: 5px;
 	box-shadow: 0px 3px 5px 0px rgba(0,0,0,1);
 }
 
+
+.greska {
+	height: 25px;
+	width: 30px;
+	margin-bottom: -7px;
+	margin-left: 5px;
+	visibility: visible;
+}
+
+.greska_invisible {
+	height: 25px;
+	width: 30px;
+	margin-bottom: -7px;
+	margin-left: 5px;
+	visibility: hidden; 
+}
+
+.greska_poruka {
+	height: 25px;
+	width: 30px;
+	margin-bottom: 120px;
+	margin-left: 5px;
+	visibility: visible;
+}
+
+.greska_poruka_invisible {
+	height: 25px;
+	width: 30px;
+	margin-bottom: 120px;
+	margin-left: 5px;
+	visibility: hidden; 
+}
+
+.poruka {
+	margin-bottom: 72px;
+	margin-left: 5px;
+	visibility: visible;
+	color: red;
+}
+
+.poruka_invisible {
+	margin-bottom: -7px;
+	margin-left: 5px;
+	visibility: hidden;
+	color: red;
+}
+
+.poruka_poruka {
+	position: relative;
+	bottom: 125px;
+	visibility: visible;
+	color: red;
+}
+
+.poruka_poruka_invisible {
+	position: relative;
+	bottom: 125px;
+	visibility: hidden; 
+	color:red;
+}
