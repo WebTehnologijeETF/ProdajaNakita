@@ -1,6 +1,5 @@
 @import url('http://fonts.googleapis.com/css?family=Stalemate&subset=latin,latin-ext');
 @import url('http://fonts.googleapis.com/css?family=Indie+Flower|Dancing+Script|Handlee&subset=latin,latin-ext');
-@import url('http://fonts.googleapis.com/css?family=Kaushan+Script&subset=latin,latin-ext' rel='stylesheet' type='text/css');
 
 * {
 padding:1px;
@@ -22,24 +21,6 @@ overflow-x:hidden;
 
 
 
-
-#link_nazad
-{
-	background: url("../img/listArrow.gif") no-repeat;
-	width:80px;
-	border:1px solid black;
-	top:5px;
-	padding: 1px 0px 2px 0px;
-}
-
-#link_nazad > a
-{
-	margin-left: 15px;
-margin top:25px;
-	text-decoration: none;
-	font-size:15px;
-color: black;
-}
 
 body > #okvir
 {
@@ -128,8 +109,8 @@ form {
  
    max-width: 400px;
   
-max-height:350;
-min-height:300;
+
+
   margin-left:10px;
 
 margin-top:2px;
@@ -263,7 +244,7 @@ div.img {
 div.img img {
     display: inline;
     margin: 5px;
- 1px solid #2F4F4F;
+ border:1px solid #2f4f4f;
 }
 
 div.img a:hover img {
@@ -547,14 +528,14 @@ padding: 5px;
 	color: red;
 }
 
-.poruka_poruka {
+.poruka_komentar {
 	position: relative;
 	bottom: 125px;
 	visibility: visible;
 	color: red;
 }
 
-.poruka_poruka_invisible {
+.poruka_komentar_invisible {
 	position: relative;
 	bottom: 125px;
 	visibility: hidden; 

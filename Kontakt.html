@@ -80,32 +80,45 @@
 	
 
 
-<form >
+<form action='#' id="myForm" method='post' name="myForm">
 <div class="form-group">
-            <label for="contact-name">Ime i prezime</label>
-            <input type="text" class="form-control" id="contact-name" name="name"       placeholder="Vaše ime i prezime.." onkeyup='validateName()'>
-            <span class='error-message' id='name-error'></span>
+				<label for="ime">Ime</label>
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime " onblur='validateName()'>
+			<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" 
+			id="greska_ime" class="greska_invisible" alt="greska"
+			onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
+            <span class='poruka_invisible' id='poruka_ime'>Unesite ime!</span>
+          </div>
+		  
+		  
+		  <div class="form-group">
+            <label for="prezime">Prezime</label>
+            <input type="text" id="prezime" name="lastname" placeholder="Vaše prezime" onblur='validateLastname()'>
+           <img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png"
+		   id="greska_prezime" class="greska_invisible" alt="greska" onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
+
+			<span class='poruka_invisible' id='poruka_prezime'>Unesite prezime!</span>
           </div>
           
 <div class="form-group">
-            <label for="contact-email">Email addresa</label>
-            <input type="email" class="form-control" id="contact-email" name="email" placeholder=" Email" onkeyup='validateEmail()'>
-            <span class='error-message' id='email-error'></span>
+            <label for="email">Email addresa</label>
+            <input type="email" id="email" name="email" placeholder=" Email" onblur='validateEmail()'>
+			<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png"
+		   id="greska_email" class="greska_invisible" alt="greska"onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
+            <span class='poruka_invisible' id='poruka_email'> Unesite ispravnu E-mail adresu</span>
           </div>   
 
-<div class="form-group">
-            <label for="contact-phone">Telefon</label>
-            <input type="tel" class="form-control" id="contact-phone" name="phone" placeholder="033223985" onkeyup='validatePhone()'>
-            <span class='error-message' id='phone-error'></span>
-          </div>
+		  
    <div class="form-group">
-            <label for='contactMessage'>Komentar ili primjedba</label>
-            <textarea class="form-control" rows="5" id='contact-message'  name='message'  placeholder="Ukucajte pitanje/poruku" onkeyup='validateMessage()'></textarea>
-            <span class='error-message' id='message-error'></span>
+            <label for='Message'>Komentar ili primjedba</label>
+            <textarea  rows="5" cols="20"  id='komentar'  name='komentar'  placeholder="Ukucajte pitanje/poruku" onblur='validateMessage()'></textarea>
+           <img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png"
+		   id="greska_poruka" class="greska_invisible" alt="greska"onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
+		   <span class='poruka_invisible' id='poruka_komentar'>Ne možete poslati poruku praznog sadržaja</span>
           </div>
 		  
 <button onclick='return validateForm()' class="btn btn-default">Submit</button>
-        <span class='error-message' id='submit-error'></span>
+        <span class='poruka_invisible' id='poruka_button'></span>
       </form>
 
 	

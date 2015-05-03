@@ -1,95 +1,133 @@
+
+function prikazi(txt)
+{
+	if(txt.id==="greska_ime"){
+		document.getElementById("poruka_ime").style.visibility="visible";
+	}
+	if(txt.id==="greska_prezime"){
+		document.getElementById("poruka_prezime").style.visibility="visible";
+	}
+	if(txt.id==="greska_email"){
+		document.getElementById("poruka_email").style.visibility="visible";
+	}
+	if(txt.id==="greska_komentar"){
+		document.getElementById("poruka_komentar").style.visibility="visible";
+	}
+}
+
+function sakrij(txt)
+{
+
+if(txt.id==="greska_ime" || txt.id==="greska_prezime" || txt.id==="greska_email" || txt.id==="greska_komentar"){
+
+		document.getElementById("poruka_ime").style.visibility="hidden";
+		document.getElementById("poruka_prezime").style.visibility="hidden";
+		document.getElementById("poruka_email").style.visibility="hidden";
+		document.getElementById("poruka_komentar").style.visibility="hidden";
+		
+	}
+
+}
+	
+
+
 function validateName() {
 
-  var name = document.getElementById('contact-name').value;
+  var name = document.getElementById('ime').value;
 
   if(name.length == 0) {
-
-    producePrompt('Niste unijeli ime', 'name-error' , 'red')
-    return false;
-
+document.getElementById("greska_ime").className="greska";
+	    return false;
   }
 
   if (!name.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
-
-    producePrompt('Unesite ime i prezime','name-error', 'red');
+  document.getElementById("greska_ime").className="greska";		
     return false;
-
   }
-
-  producePrompt('OK', 'name-error', 'green');
+document.getElementById("greska_ime").className="greska_invisible";	
   return true;
-
 }
 
 
 function validateEmail () {
 
-  var email = document.getElementById('contact-email').value;
+  var email = document.getElementById('email').value;
 
   if(email.length == 0) {
-
-    producePrompt('Email nije pravilan','email-error', 'red');
+document.getElementById("greska_email").className="greska";
     return false;
 
   }
 
   if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
 
-    producePrompt('Email nije pravilno unesen', 'email-error', 'red');
+ document.getElementById("greska_email").className="greska";
     return false;
 
   }
 
-  producePrompt('OK', 'email-error', 'green');
+document.getElementById("greska_email").className="greska_invisible";	
   return true;
 
 }
 
 function validateMessage() {
-  var message = document.getElementById('contact-message').value;
-  var required = 30;
+  var message = document.getElementById('komentar').value;
+  var required = 10;
   var left = required - message.length;
 
   if (left > 0) {
-    producePrompt(left + ' Unesite tekst','message-error','red');
+ document.getElementById("greska_komentar").className="greska";
     return false;
   }
-
-  producePrompt('OK', 'message-error', 'green');
+if(message.length==0)
+{
+	document.getElementById("greska_komentar").className="greska";
+    return false;
+	
+}
+document.getElementById("greska_komentar").className="greska_invisible";	
   return true;
 
 }
 
 function validateForm() {
-    if ((!validateName() && !validatePhone() && !validateEmail() && !validateMessage())||(!validateName() || !validatePhone() || !validateEmail() || !validateMessage())) {
-        jsShow('submit-error');
-        producePrompt('Ispravite greške.', 'submit-error', 'red');
-        setTimeout(function(){jsHide('submit-error');}, 2000);
+    if ((!validateName() && !validateLastname() && !validateEmail() && !validateMessage())||(!validateName() || !validateLastname() || !validateEmail() || !validateMessage())) {
+       
+        producePrompt('Ispravite greške.', 'poruka_button', 'red');
+        setTimeout(function(){jsHide('poruka_button');}, 2000);
         return false;
     }
 	alert("Ispunili ste formu ispravno!");
+	return true;
 }
-function validatePhone() {
 
-  var phone = document.getElementById('contact-phone').value;
 
-    if(phone.length == 0) {
-      producePrompt('Niste unijeli broj telefona', 'phone-error', 'red');
-      return false;
-    }
+function validateLastname() {
 
-    if(phone.length != 9) {
-      producePrompt('Unesite i pozivni broj', 'phone-error', 'red');
-      return false;
-    }
+  var lastname = document.getElementById('prezime').value;
 
-    if(!phone.match(/^[0-9]{10}$/)) {
-      producePrompt('Unijeli ste slovo ili znak.' ,'phone-error', 'red');
-      return false;
-    }
+  if(lastname.length == 0) {
+	  
 
-    producePrompt('OK', 'phone-error', 'green');
-    return true;
+	document.getElementById("greska_prezime").className="greska";
+		
+
+    return false;
+
+  }
+
+  if (!lastname.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+
+    	document.getElementById("greska_prezime").className="greska";
+
+	return false;
+
+  }
+  document.getElementById("greska_prezime").className="greska_invisible";
+
+
+  return true;
 
 }
 
@@ -110,4 +148,56 @@ function producePrompt(message, promptLocation, color) {
   document.getElementById(promptLocation).style.color = color;
 
 
+}
+
+
+
+
+
+
+function ValidirajMjesto() {
+	var mjesto = document.getElementById("mjesto").value;
+	var opcina = document.getElementById("opcina");
+	var opcina_tekst = opcina.options[opcina.selectedIndex].text;
+	var rezultat;
+
+	var xmlhttp = new XMLHttpRequest();
+	stanje = 1;    
+    xmlhttp.onreadystatechange = function() {
+        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            rezultat = xmlhttp.responseText;
+            if(rezultat.indexOf("greska") > -1) {
+				document.getElementById("greska_mjesto").className="greska";
+				document.getElementById("poruka_mjesto").className="poruka";
+				mjestoValidirano = false;
+				console.log('radi');
+				return false;
+			}
+			else {
+				document.getElementById("greska_mjesto").className="greska_invisible";
+				document.getElementById("poruka_mjesto").className="poruka_invisible";
+				mjestoValidirano = true;
+				return true;
+			}
+        }
+        stanje = 2;
+    }
+    
+    xmlhttp.open('GET', 'http://zamger.etf.unsa.ba/wt/mjesto_opcina.php?opcina=' + opcina_tekst + '&mjesto=' + mjesto, true);
+    xmlhttp.send();
+	return false;
+}
+
+
+function otvoriUrlAsinhrono(url) {
+    var ajax = new XMLHttpRequest;
+
+    ajax.onreadystatechange = function() {
+        if(ajax.status == 200 && ajax.readyState == 4) {
+            document.write(ajax.responseText);
+        }
+    }
+
+    ajax.open("GET", url, true);
+    ajax.send();
 }
