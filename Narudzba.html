@@ -1,7 +1,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 <HEAD>
+<SCRIPT src="validacijanarudzbe.js"></SCRIPT>
 <SCRIPT src="ValidacijaKontaktForme.js"></SCRIPT>
+<SCRIPT src="otvoriurlajax.js"></SCRIPT>
 <TITLE>Prodaja nakita Sarajevo</TITLE>
 <link rel="stylesheet" type="text/css" href="stilnaslovna.css">
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -19,73 +21,65 @@
 		<div class="logo"></div>
 	
 	</div>
-	<div id="meni">
-		
-		<table class="gridtable" style="width:100%">
-  <tr>
- <td><a href="Naslovna.html">Naslovna</a></td>	
-<td><a href="Kategorije.html">Kategorije</a></td>		
-    <td><a href="Onama.html">O nama</a></td>
-  </tr>
-</table>
-
-	</div>
 	
-<div id="glavni">
+
 <div class="Narudzba">	
-<p>Možete nas pronaći na slijedećim stranicama:</p>
+
+
+        <form name="kontaktForma" id="kontaktforma" action="#">
+		<label for="ime">Ime</label>
+            <input type="text" id="ime" name="ime" placeholder="Vaše ime " onblur='validateName()'>
+			<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" 
+			id="greska_ime" class="greska_invisible" alt="greska"
+			onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
+            <span class='poruka_invisible' id='poruka_ime'>Unesite ime!</span>
+      
+		  
+		  
 	
+            <label for="prezime">Prezime</label>
+            <input type="text" id="prezime" name="lastname" placeholder="Vaše prezime" onblur='validateLastname()'>
+           <img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png"
+		   id="greska_prezime" class="greska_invisible" alt="greska" onmouseenter="prikazi(this)" onmouseleave="sakrij(this)">
 
-
-
-
-	<form>
-		Ukoliko imate pitanja kontaktirajte nas!<br><br>
-			<div>
-				Ime:<br>
-				<input type="text" name="ime" id="ime" onblur="ValidirajIme()">
-				<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" id="greska_ime" class="greska_invisible" alt="greska">
-				<span id="poruka_ime" class="poruka_invisible">Unesite ime</span>
-			</div>
-			<div>
-				Prezime:<br>
-				<input type="text" name="prezime" id="prezime" onblur="ValidirajPrezime()"><img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" id="greska_prezime" class="greska_invisible" alt="greska">
-				<span id="poruka_prezime" class="poruka_invisible">Unesite prezime</span>
-			</div>
-			<div>
-				E-mail:<br>
-  				<input type="email" name="email" id="email" onblur="ValidirajEmail()">
-				<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" id="greska_email" class="greska_invisible" alt="greska">
-  				<span id="poruka_email" class="poruka_invisible">Niste unijeli e-mail</span>
-  			</div>
-  
-  			<div>
-			Poruka:<br>
-				<textarea class="poruka" name="poruka" rows="5" id="poruka" onblur="ValidirajPoruku()"></textarea>
-				<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" id="greska_poruka" class="greska_poruka_invisible" alt="greska">
-				<span id="poruka_poruka" class="poruka_poruka_invisible">Unesite poruku</span>
-			</div>
-			  <div>
-				Mjesto:<br>
-				<input type="text" name="mjesto" id="mjesto" onblur="ValidirajMjesto()">
-				<img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png" id="greska_mjesto" class="greska_invisible" alt="greska">
-				<span id="poruka_mjesto" class="poruka_invisible">Greška!</span>
-			</div><br>
-			<div>
-				Izaberite općinu:<br>
-				<select id="opcina">
-  					<option value="Ilidza">Ilidža</option>
- 					<option value="Centar">Centar</option>
-  					<option value="NoviGrad">Novi Grad</option>
-  					<option value="StariGrad">Stari Grad</option>
-				</select>
-			</div>
-			<br>
-			<br>
-			<input type="submit" value="Pošalji" name="submit" id="submit" onclick="return ValidirajKontakt()">
-		</form>
-
+			<span class='poruka_invisible' id='poruka_prezime'>Unesite prezime!</span>
+     
+	 
+		Grad:<br>
+		<input list="gradovi" name="grad" id="grad">
+			<datalist id="gradovi">
+				<option value="">Sarajevo</option>
+				<option value="">Banja Luka</option>
+				<option value="">Tuzla</option>
+				<option value="">Zenica</option>
+				<option value="">Mostar</option>
+				<option value="">Bihać</option>
+				<option value="">Trebinje</option>
+			    <option value="">Prijedor</option>
+				<option value="">Ključ</option>
+					<option value="">Maglaj</option>
+						<option value="">Bugojno</option>
+							<option value="">Goražde</option>
+			</datalist>
+		<br><br>
+		
+		
 	
+            <label for="postanski">Postanski broj</label>
+            <input type="text" id="postanski" name="postanski" onblur="validiraj()">
+           <img src="https://cdn0.iconfinder.com/data/icons/super-mono-reflection/red/exclamation-circle_red.png"
+		   id="greska_postanski" class="greska_invisible" alt="greska">
+
+			<span class='poruka_invisible' id='poruka_broj'>Poštanski broj ne odgovara unesenom gradu</span>
+        
+          
+		  
+		  
+		
+		<button id="submit_but" type="button" onclick="validiraj()">Pošalji</button>
+		
+	
+	</form>
 
 
 </div>

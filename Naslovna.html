@@ -1,13 +1,14 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <HTML>
 <HEAD>
-
+<SCRIPT src="otvoriurlajax.js"></SCRIPT>
+<script src="NakitStablo.js" type=""></script>
 <TITLE>Prodaja nakita Sarajevo</TITLE>
 
 <link rel="stylesheet" type="text/css" href="stilnaslovna.css">
 <META http-equiv="Content-Type" content="text/html; charset=utf-8">
 </HEAD>
-<BODY>
+<BODY onload="startTimer()">
 <div id="okvir">
 
 
@@ -22,11 +23,11 @@
 		
 		<table class="gridtable" style="width:100%">
   <tr>
-  
- <td><a href="Kategorije.html">Kategorije</a></td>	
+ 						
 
-<td><a href="Onama.html">O nama</a></td>		
-    <td><a href="Kontakt.html">Kontakt</a></td>
+		<td><a onclick="otvoriAsinhrono('Kategorije.html')">Kategorije</a></li></td>	
+    <td><a onclick="otvoriAsinhrono('Onama.html')">O nama</a></li></td>
+	 <td>  <li><a onclick="otvoriAsinhrono('Kontakt.html')">Kontakt</a></li></td>	
 
   </tr>
 </table>
@@ -34,13 +35,14 @@
 	</div>
 	
 	
-	<div id="glavni">
+	<div id="glavnipocetna">
 	 
 	 <div class="image">	
+	  <img id="img" src="http://www.lovethispic.com/uploaded_images/31090-Love-Jewelry.jpg"  width="600" height="430">
 </div>
 	
 	 
-	<div class="ScrollStyle">
+	<div class="ScrollStyle" visibility="hidden">
  <h2>Novosti</h2><br>
   <p>Danas je održana ceremonija otvaranja novih prodavnica našeg brenda u BiH</p>
   <p><img src="http://i.imgur.com/WCqNaBh.png"    alt="Slikanovost">
