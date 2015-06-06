@@ -42,22 +42,8 @@
 </div>
 	
 	 
-	<div class="ScrollStyle" >
- <h2>Novosti</h2><br>
-  <p>Danas je održana ceremonija otvaranja novih prodavnica našeg brenda u BiH</p>
-  <p><img src="http://i.imgur.com/WCqNaBh.png"    alt="Slikanovost">
-  <a href="#">Detaljnije...</a></p>
-    
-  <h4>Datum objave 27.03.2015 Autor posta: Irma Solaković</h4>
-  <p>--------------------------------------------------------------------------------</p><br>
-  <p>Nove akcije u našim buticima</p>
-  <p><img src="http://i.imgur.com/32QLMjv.png"  alt="slika2novost">
-  <a href="#">Detaljnije...</a></p>
-    
-  <h4>Datum objave 29.03.2015 Autor posta: Irma Solaković</h4>
-
-  
-  
+	<div class="novosti">
+<?php include("novosti.php");?>
 </div>
 	
 	</div>
